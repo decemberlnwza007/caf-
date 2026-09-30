@@ -1,0 +1,59 @@
+.app-shell {
+  min-height: 100svh;
+}
+
+.app-content {
+  min-width: 0;
+  container: workspace / inline-size;
+}
+
+@container workspace (max-width: 63.99rem) {
+  .app-shell .app-content .activity-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .stock-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stock-name {
+    grid-column: 1 / -1;
+  }
+
+  .stock-table-heading {
+    display: none;
+  }
+
+  .mobile-label {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0 0 0.25rem;
+    overflow: visible;
+    clip-path: none;
+    white-space: normal;
+  }
+
+  .promotion-card {
+    grid-template-columns: 4.5rem minmax(0, 1fr);
+  }
+
+  .promotion-details {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .promotion-price {
+    grid-column: 1 / -1;
+    display: flex;
+    padding-top: 1rem;
+    border-top: 1px dashed #d1d5db;
+    text-align: left;
+  }
+
+  .promotion-actions {
+    grid-column: 1 / -1;
+    flex-direction: row;
+  }
+}
+

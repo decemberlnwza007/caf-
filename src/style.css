@@ -11,3 +11,41 @@
 :root {
   font-family: 'LINESeedSansTH', sans-serif;
 }
+
+@font-face {
+  font-family: 'LINESeedSansTH';
+  src: url('./assets/fonts/LINESeedSansTH_W_Bd.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color: #111827;
+  font-synthesis: none;
+  overflow-wrap: anywhere;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 3px solid #c2410c;
+  outline-offset: 4px;
+}
+
+::selection {
+  color: #111827;
+  background: #fed7aa;
+}
